@@ -13,6 +13,6 @@ namespace Payments
         {
             this.proc = proc;
         }
-        public abstract void payed();   
+        public abstract void pay(double money);   
     }
 }

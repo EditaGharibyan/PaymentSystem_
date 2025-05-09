@@ -8,9 +8,9 @@ namespace Processor
 {
     public class StripProcessor:IProcessor
     {
-        public void pay()
+        public void ProcessPayment(string t,double m)
         {
-            Console.WriteLine("it is StripProcessor");
+            Console.WriteLine($"{t} Strip payment money {m}");
         }
         
 

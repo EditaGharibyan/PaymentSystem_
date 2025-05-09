@@ -8,7 +8,7 @@ namespace Processor
 {
     public interface IProcessor
     {
-        public void pay();
+        public void ProcessPayment(string type,double m);
 
     }
 }

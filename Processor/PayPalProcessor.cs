@@ -7,9 +7,9 @@ namespace Processor
 {
     public class PayPalProcessor:IProcessor
     {
-        public void pay()
+        public void ProcessPayment(string t,double m)
         {
-            Console.WriteLine("It is PayPAl");
+            Console.WriteLine($"{t} Paypall payment money {m}");
         }
     }
 }

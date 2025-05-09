@@ -9,9 +9,9 @@ namespace Payments
     public class SubscriptionPayment:Payment
     {
         public SubscriptionPayment(IProcessor p) : base(p) { }
-        public override void payed()
+        public override void pay(double money)
         {
-            proc.pay();
+            proc.ProcessPayment("Subscription", money);
         }
     }
 }

@@ -8,9 +8,9 @@ namespace Processor
 {
     public class Cryptowallet:IProcessor
     {
-        public void pay()
+        public void ProcessPayment(string t, double m)
         {
-            Console.WriteLine("It is CryptoWallet");
+            Console.WriteLine($"{t} Crypto payment money {m}");
         }
 
     }

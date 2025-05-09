@@ -12,9 +12,9 @@ namespace Payments
         public BasicPayment(IProcessor proc):base(proc)
         {
         }
-        public override void payed()
+        public override void pay(double money)
         {
-            proc.pay();
+            proc.ProcessPayment("Basic", money);
         }
     }
 }
